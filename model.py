@@ -370,6 +370,13 @@ def simulate(params: Params, M: sp.spmatrix, eps: float, N, n_steps: int,
                                          # policy (e.g. a threshold trigger) where "how
                                          # long was suppression on" matters in its own
                                          # right, not just how much it reduced transmission
+    cum_episodes = np.zeros((R, n), dtype=np.int64)  # count of mult_now<1 "on"
+                                         # episodes per node (transitions from off to
+                                         # on), for alert-fatigue-relevant statistics
+                                         # distinct from total time in force: mean
+                                         # episode length = (cum_active_time/N_i) /
+                                         # cum_episodes
+    prev_active = np.zeros((R, n), dtype=bool)  # unsuppressed at t=0 by construction
     traj = [] if track_trajectory else None
     traj_symptomatic = [] if track_trajectory else None
     iota_hat_traj = [] if track_iota else None
@@ -481,6 +488,7 @@ def simulate(params: Params, M: sp.spmatrix, eps: float, N, n_steps: int,
                 mult_now = np.exp(-p.alpha * cost_signal)
                 cost_now = _penalty_cost(N_arr, p.alpha * cost_signal, p.dt, p.penalty)
 
+        active_now = np.asarray(mult_now) < 1.0
         if t >= burn_in_steps:
             # excluded during burn-in (docstring above): the nowcast and the
             # epidemic are both still settling from their initial state, not
@@ -489,7 +497,9 @@ def simulate(params: Params, M: sp.spmatrix, eps: float, N, n_steps: int,
             cum_symptomatic += new_SN
             cum_cost += cost_now
             cum_suppression += N_arr * (1.0 - mult_now) * p.dt
-            cum_active_time += N_arr * (np.asarray(mult_now) < 1.0) * p.dt
+            cum_active_time += N_arr * active_now * p.dt
+            cum_episodes += (active_now & ~prev_active)
+        prev_active = active_now
 
         if track_policy:
             cost_now_traj.append(cost_now.copy())
@@ -535,7 +545,7 @@ def simulate(params: Params, M: sp.spmatrix, eps: float, N, n_steps: int,
     out = dict(X_SN=X_SN, X_SI=X_SI, X_AI=X_AI, ever=ever, iota_hat=iota_hat,
                cum_infections=cum_infections, cum_symptomatic=cum_symptomatic,
                cum_cost=cum_cost, cum_suppression=cum_suppression,
-               cum_active_time=cum_active_time)
+               cum_active_time=cum_active_time, cum_episodes=cum_episodes)
     if track_trajectory:
         out["traj"] = np.array(traj)
         out["traj_symptomatic"] = np.array(traj_symptomatic)
