@@ -28,7 +28,7 @@ EPS = 0.3
 SEED0 = 9500
 PERCENTILES = (20, 55, 85)
 SUPPRESSION_LEVELS = (0.5, 0.2, 0.1)
-N_REPS = 100
+N_REPS = 250   # raised from 100 (2026-09-11) alongside the main sweep
 MEASURE_YEARS = 10.0
 
 # param -> (low, baseline, high); "eps" is handled separately since it is a

@@ -24,7 +24,8 @@ if __name__ == "__main__":
     SEED0 = 9000
     PERCENTILES = (1, 20, 40, 55, 70, 85, 99)
     SUPPRESSION_LEVELS = (0.50, 0.30, 0.20, 0.15, 0.10)
-    N_REPS = 200   # same as the coarse 10-year run, for direct comparability
+    N_REPS = 500   # raised from 200 (2026-09-11) to tighten the paired-bootstrap
+                    # CIs on the borderline grid cells
 
     MEASURE_YEARS = 10.0
     dt, n_steps, burn_in_steps, measure_time = cfg.time_grid(MEASURE_YEARS)

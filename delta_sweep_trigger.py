@@ -26,7 +26,7 @@ EPS = 0.3
 SEED0 = 9700
 PERCENTILES = (20, 55, 85)
 SUPPRESSION_LEVELS = (0.5, 0.2, 0.1)
-N_REPS = 100
+N_REPS = 250   # raised from 100 (2026-09-11) alongside the main sweep
 MEASURE_YEARS = 10.0
 R_INV_DAYS = 21.0
 
