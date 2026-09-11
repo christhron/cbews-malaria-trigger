@@ -99,7 +99,7 @@ assert di["off_symp"] == dp["off_symp"], "off baselines differ; cannot differenc
 pct_i = 100.0 * di["Z_cases_averted"] / di["off_symp"]
 pct_p = 100.0 * dp["Z_cases_averted"] / dp["off_symp"]
 diff = pct_i - pct_p                       # > 0: reported signal averts a larger share than perfect info
-pctl = (1, 20, 40, 55, 70, 85, 99)        # PERCENTILES, from sweep_trigger_10yr_fine.py
+pctl = (10, 30, 50, 70, 90)                # PERCENTILES, from sweep_trigger_10yr_fine.py
 Slev = di["suppression_levels"]
 m = float(np.abs(diff).max())
 
@@ -198,37 +198,31 @@ cb0 = fig.colorbar(im0, ax=axes[0], pad=0.02)
 cb0.set_label("mean distinct 'on' episodes per town", color=INK_SECONDARY)
 cb0.outline.set_edgecolor(AXIS)
 
-# the loosest-threshold, weakest-suppression corner is near-saturated (active
-# almost the entire window, occasionally for the whole 10 years in a given
-# town/replicate) and its mean episode length is a right-skewed outlier
-# dominated by a handful of near-full-window "episodes" -- excluded from the
-# color scale (still plotted, annotated) so it doesn't wash out the rest.
+# Note: with the 10th-90th percentile grid (2026-09-11 revision) there is no
+# longer a near-saturated corner cell -- the most extreme percentiles (1st,
+# 99th) that produced one are outside this grid -- so no special-casing is
+# needed here (contrast the earlier 1st-99th-percentile grid, which had one).
 epi_len_days = di["Z_episode_length"] * 21.0
-mask = np.ones_like(epi_len_days, dtype=bool)
-mask[-1, 0] = False   # S=10%, 1st percentile: the saturated corner
-vmax_len = epi_len_days[mask].max()
-im1 = axes[1].imshow(np.where(mask, epi_len_days, np.nan), aspect="auto", origin="lower",
+vmax_len = epi_len_days.max()
+im1 = axes[1].imshow(epi_len_days, aspect="auto", origin="lower",
                       cmap=SEQ_CMAP, vmin=0, vmax=vmax_len)
 axes[1].set_xticks(range(len(pctl))); axes[1].set_xticklabels([str(q) for q in pctl])
 axes[1].set_yticks(range(len(Slev))); axes[1].set_yticklabels([f"{s:.2f}" for s in Slev])
 for i in range(epi_len_days.shape[0]):
     for j in range(epi_len_days.shape[1]):
         v = epi_len_days[i, j]
-        label = f"{v:.0f}" if mask[i, j] else f"{v:.0f}$^\\dagger$"
-        color = INK if not mask[i, j] else ("white" if v > vmax_len / 2 else INK)
-        axes[1].text(j, i, label, ha="center", va="center", fontsize=8, color=color)
+        color = "white" if v > vmax_len / 2 else INK
+        axes[1].text(j, i, f"{v:.0f}", ha="center", va="center", fontsize=8, color=color)
 axes[1].set_xlabel("threshold percentile")
 axes[1].set_title("Mean alert-episode length (days)", color=INK, loc="left")
 cb1 = fig.colorbar(im1, ax=axes[1], pad=0.02)
-cb1.set_label("days ($\\dagger$ = saturated outlier, off color scale)", color=INK_SECONDARY)
+cb1.set_label("days", color=INK_SECONDARY)
 cb1.outline.set_edgecolor(AXIS)
 fig.tight_layout()
 fig.savefig(outdir / "fig_trigger_episodes_iota_hat_10yr_fine.png", dpi=200)
 plt.close(fig)
 print("wrote fig_trigger_episodes_iota_hat_10yr_fine.png")
-print(f"  episode length range excl. saturated corner (days): "
-      f"{epi_len_days[mask].min():.1f} to {epi_len_days[mask].max():.1f}; "
-      f"saturated corner (S=10%, 1st pct): {epi_len_days[-1,0]:.0f} days")
+print(f"  episode length range (days): {epi_len_days.min():.1f} to {epi_len_days.max():.1f}")
 
 # ---- Table: active fraction and rate, both drivers, at S=20% across the
 #      threshold grid (mirrors Table 2's format; values pulled programmatically
@@ -285,7 +279,9 @@ print("Ratio (trigger / constant)       & " +
 #          35 grid cells actually run, so every point is an achieved result. ----
 symp_pct = d["Z_symp_pct"]      # (n_s, n_t), same grid as af_i etc.
 active_frac = d["Z_active_frac"]
-targets = np.array([5, 10, 15, 20, 25, 30, 35])
+targets = np.array([2, 4, 6, 8, 10, 12, 14])  # narrower grid (10th-90th
+    # percentile, S up to 50%; 2026-09-11 revision) reaches at most ~15%
+    # reduction, vs. the earlier 1st-99th-percentile grid's ~38%
 iso_active_frac = np.full(targets.shape, np.nan)
 iso_S = np.full(targets.shape, np.nan)
 iso_Tidx = np.full(targets.shape, -1, dtype=int)
