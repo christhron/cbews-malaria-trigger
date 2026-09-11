@@ -261,6 +261,23 @@ print("95\\% CI & " +
       " & ".join(f"[{lo:+.2f}, {hi:+.2f}]" for lo, hi in zip(diff_pp_lo[s20], diff_pp_hi[s20]))
       + r" \\")
 
+# ---- Table 2 (tab:rate-ratio): trigger vs. matched constant, per-active-day
+#      rate and their ratio, at S=20% across the threshold grid
+#      ($\hat\iota_i$-driven) -- values pulled programmatically from the pkl
+#      to remove the earlier hand-transcription. ----
+rate_trig_s20 = d["Z_rate_trig"][s20]
+rate_const_s20 = d["Z_rate_const"][s20]
+ratio_s20 = rate_trig_s20 / rate_const_s20
+print("\nLaTeX table body, Table 2 (tab:rate-ratio), S=20%:")
+print("Threshold percentile & " + " & ".join(f"{q}{('st' if q==1 else 'th')}" for q in pctl) + r" \\")
+print(r"\midrule")
+print("Rate, trigger (cases/active-day) & " +
+      " & ".join(f"{v:.4f}" for v in rate_trig_s20) + r" \\")
+print("Rate, matched constant           & " +
+      " & ".join(f"{v:.4f}" for v in rate_const_s20) + r" \\")
+print("Ratio (trigger / constant)       & " +
+      " & ".join(f"{v:.1f}$\\times$" for v in ratio_s20) + r" \\")
+
 # ---- (6) iso-effectiveness curve: for a target % case reduction, the minimum
 #          active fraction anywhere on the (S, threshold) grid that achieves at
 #          least that reduction ($\hat\iota_i$-driven). Answers research
