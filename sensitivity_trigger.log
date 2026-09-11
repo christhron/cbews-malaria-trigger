@@ -1,0 +1,213 @@
+Sensitivity sweep: (20, 55, 85) threshold percentiles x (0.5, 0.2, 0.1) suppression levels, 100 reps, 10yr horizon, iota_hat driver only
+
+=== sensitivity point: eps=0.15 (eps=0.15) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.27478 0.29976 0.32187]
+  phi thresholds (p[20, 55, 85]): [0.28761 0.30652 0.32496]
+    driver=iota_hat T=0.27478 S=0.50 effort=0.0615 active_frac=0.1230 symp_trig=11002246 cases_averted=1894513 cases_averted_const=1779546 rate_trig=0.04707 rate_const=0.00544 episodes=583.6  (25.9s)
+    driver=iota_hat T=0.27478 S=0.20 effort=0.0500 active_frac=0.2500 symp_trig=11447595 cases_averted=1449165 cases_averted_const=1429730 rate_trig=0.01771 rate_const=0.00437 episodes=933.2  (27.0s)
+    driver=iota_hat T=0.27478 S=0.10 effort=0.0408 active_frac=0.4083 symp_trig=11755077 cases_averted=1141682 cases_averted_const=1158338 rate_trig=0.00854 rate_const=0.00354 episodes=1003.4  (27.2s)
+    driver=iota_hat T=0.29976 S=0.50 effort=0.0399 active_frac=0.0799 symp_trig=11694249 cases_averted=1202510 cases_averted_const=1131615 rate_trig=0.04599 rate_const=0.00346 episodes=409.8  (28.9s)
+    driver=iota_hat T=0.29976 S=0.20 effort=0.0277 active_frac=0.1387 symp_trig=12106812 cases_averted=789947 cases_averted_const=776712 rate_trig=0.01741 rate_const=0.00237 episodes=635.4  (28.2s)
+    driver=iota_hat T=0.29976 S=0.10 effort=0.0216 active_frac=0.2160 symp_trig=12301116 cases_averted=595643 cases_averted_const=600839 rate_trig=0.00843 rate_const=0.00184 episodes=775.2  (31.3s)
+    driver=iota_hat T=0.32187 S=0.50 effort=0.0197 active_frac=0.0394 symp_trig=12321282 cases_averted=575478 cases_averted_const=547413 rate_trig=0.04465 rate_const=0.00167 episodes=273.5  (30.2s)
+    driver=iota_hat T=0.32187 S=0.20 effort=0.0119 active_frac=0.0594 symp_trig=12564824 cases_averted=331935 cases_averted_const=327225 rate_trig=0.01708 rate_const=0.00100 episodes=368.5  (30.7s)
+    driver=iota_hat T=0.32187 S=0.10 effort=0.0080 active_frac=0.0798 symp_trig=12678632 cases_averted=218127 cases_averted_const=218005 rate_trig=0.00836 rate_const=0.00067 episodes=447.8  (25.3s)
+  eps=0.15 done in 273.7s
+
+=== sensitivity point: eps=0.3 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.2779  0.30065 0.32118]
+  phi thresholds (p[20, 55, 85]): [0.2878  0.30659 0.32517]
+    driver=iota_hat T=0.2779 S=0.50 effort=0.0570 active_frac=0.1141 symp_trig=11182388 cases_averted=1746182 cases_averted_const=1638200 rate_trig=0.04678 rate_const=0.00501 episodes=537.7  (24.9s)
+    driver=iota_hat T=0.2779 S=0.20 effort=0.0469 active_frac=0.2345 symp_trig=11573293 cases_averted=1355277 cases_averted_const=1333735 rate_trig=0.01766 rate_const=0.00408 episodes=865.4  (25.7s)
+    driver=iota_hat T=0.2779 S=0.10 effort=0.0389 active_frac=0.3894 symp_trig=11841495 cases_averted=1087075 cases_averted_const=1099298 rate_trig=0.00853 rate_const=0.00336 episodes=910.2  (25.1s)
+    driver=iota_hat T=0.30065 S=0.50 effort=0.0369 active_frac=0.0738 symp_trig=11825100 cases_averted=1103470 cases_averted_const=1038499 rate_trig=0.04571 rate_const=0.00317 episodes=373.7  (24.5s)
+    driver=iota_hat T=0.30065 S=0.20 effort=0.0263 active_frac=0.1315 symp_trig=12180250 cases_averted=748321 cases_averted_const=733574 rate_trig=0.01739 rate_const=0.00224 episodes=578.9  (24.6s)
+    driver=iota_hat T=0.30065 S=0.10 effort=0.0209 active_frac=0.2085 symp_trig=12352666 cases_averted=575904 cases_averted_const=578191 rate_trig=0.00844 rate_const=0.00177 episodes=710.0  (24.7s)
+    driver=iota_hat T=0.32118 S=0.50 effort=0.0185 active_frac=0.0369 symp_trig=12390464 cases_averted=538106 cases_averted_const=509678 rate_trig=0.04452 rate_const=0.00156 episodes=246.4  (24.8s)
+    driver=iota_hat T=0.32118 S=0.20 effort=0.0114 active_frac=0.0572 symp_trig=12609522 cases_averted=319048 cases_averted_const=313528 rate_trig=0.01704 rate_const=0.00096 episodes=340.9  (24.6s)
+    driver=iota_hat T=0.32118 S=0.10 effort=0.0078 active_frac=0.0784 symp_trig=12713309 cases_averted=215261 cases_averted_const=214444 rate_trig=0.00839 rate_const=0.00066 episodes=416.9  (24.6s)
+  eps=0.3 done in 241.0s
+
+=== sensitivity point: eps=0.5 (eps=0.5) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.28052 0.30179 0.32159]
+  phi thresholds (p[20, 55, 85]): [0.28781 0.30651 0.32519]
+    driver=iota_hat T=0.28052 S=0.50 effort=0.0539 active_frac=0.1078 symp_trig=11300846 cases_averted=1643845 cases_averted_const=1543348 rate_trig=0.04659 rate_const=0.00472 episodes=469.4  (24.4s)
+    driver=iota_hat T=0.28052 S=0.20 effort=0.0443 active_frac=0.2216 symp_trig=11666154 cases_averted=1278537 cases_averted_const=1256285 rate_trig=0.01763 rate_const=0.00384 episodes=771.7  (24.6s)
+    driver=iota_hat T=0.28052 S=0.10 effort=0.0373 active_frac=0.3729 symp_trig=11901348 cases_averted=1043343 cases_averted_const=1049769 rate_trig=0.00855 rate_const=0.00321 episodes=792.2  (24.4s)
+    driver=iota_hat T=0.30179 S=0.50 effort=0.0354 active_frac=0.0708 symp_trig=11889513 cases_averted=1055178 cases_averted_const=994360 rate_trig=0.04553 rate_const=0.00304 episodes=328.4  (24.5s)
+    driver=iota_hat T=0.30179 S=0.20 effort=0.0249 active_frac=0.1246 symp_trig=12235305 cases_averted=709386 cases_averted_const=694038 rate_trig=0.01739 rate_const=0.00212 episodes=505.3  (25.2s)
+    driver=iota_hat T=0.30179 S=0.10 effort=0.0201 active_frac=0.2012 symp_trig=12390175 cases_averted=554516 cases_averted_const=557945 rate_trig=0.00842 rate_const=0.00170 episodes=624.4  (24.8s)
+    driver=iota_hat T=0.32159 S=0.50 effort=0.0172 active_frac=0.0344 symp_trig=12446862 cases_averted=497829 cases_averted_const=474926 rate_trig=0.04425 rate_const=0.00145 episodes=226.2  (24.9s)
+    driver=iota_hat T=0.32159 S=0.20 effort=0.0105 active_frac=0.0523 symp_trig=12652581 cases_averted=292110 cases_averted_const=286531 rate_trig=0.01705 rate_const=0.00088 episodes=305.3  (26.9s)
+    driver=iota_hat T=0.32159 S=0.10 effort=0.0073 active_frac=0.0728 symp_trig=12746314 cases_averted=198377 cases_averted_const=199071 rate_trig=0.00833 rate_const=0.00061 episodes=377.0  (24.5s)
+  eps=0.5 done in 241.9s
+
+=== sensitivity point: rho=0.075 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.26506 0.29715 0.32512]
+  phi thresholds (p[20, 55, 85]): [0.28772 0.30645 0.32508]
+    driver=iota_hat T=0.26506 S=0.50 effort=0.0755 active_frac=0.1510 symp_trig=10609994 cases_averted=2318308 cases_averted_const=2208664 rate_trig=0.04691 rate_const=0.00675 episodes=811.2  (25.4s)
+    driver=iota_hat T=0.26506 S=0.20 effort=0.0612 active_frac=0.3061 symp_trig=11166759 cases_averted=1761543 cases_averted_const=1766170 rate_trig=0.01759 rate_const=0.00540 episodes=1188.5  (25.1s)
+    driver=iota_hat T=0.26506 S=0.10 effort=0.0474 active_frac=0.4742 symp_trig=11617238 cases_averted=1311064 cases_averted_const=1349905 rate_trig=0.00845 rate_const=0.00412 episodes=1253.8  (24.6s)
+    driver=iota_hat T=0.29715 S=0.50 effort=0.0446 active_frac=0.0891 symp_trig=11585431 cases_averted=1342871 cases_averted_const=1264393 rate_trig=0.04604 rate_const=0.00386 episodes=562.2  (24.4s)
+    driver=iota_hat T=0.29715 S=0.20 effort=0.0327 active_frac=0.1633 symp_trig=11999044 cases_averted=929257 cases_averted_const=916156 rate_trig=0.01739 rate_const=0.00280 episodes=839.1  (24.5s)
+    driver=iota_hat T=0.29715 S=0.10 effort=0.0241 active_frac=0.2411 symp_trig=12265532 cases_averted=662770 cases_averted_const=670402 rate_trig=0.00840 rate_const=0.00205 episodes=992.4  (24.5s)
+    driver=iota_hat T=0.32512 S=0.50 effort=0.0212 active_frac=0.0424 symp_trig=12294963 cases_averted=633338 cases_averted_const=587417 rate_trig=0.04568 rate_const=0.00179 episodes=336.4  (24.5s)
+    driver=iota_hat T=0.32512 S=0.20 effort=0.0134 active_frac=0.0669 symp_trig=12547598 cases_averted=380704 cases_averted_const=366542 rate_trig=0.01739 rate_const=0.00112 episodes=465.8  (25.4s)
+    driver=iota_hat T=0.32512 S=0.10 effort=0.0088 active_frac=0.0877 symp_trig=12684848 cases_averted=243453 cases_averted_const=238686 rate_trig=0.00848 rate_const=0.00073 episodes=556.0  (23.9s)
+  rho=0.075 done in 240.4s
+
+=== sensitivity point: rho=0.15 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.2777  0.30074 0.32196]
+  phi thresholds (p[20, 55, 85]): [0.28771 0.3065  0.32514]
+    driver=iota_hat T=0.2777 S=0.50 effort=0.0574 active_frac=0.1148 symp_trig=11171907 cases_averted=1757262 cases_averted_const=1649698 rate_trig=0.04678 rate_const=0.00504 episodes=543.5  (24.5s)
+    driver=iota_hat T=0.2777 S=0.20 effort=0.0473 active_frac=0.2363 symp_trig=11563155 cases_averted=1366015 cases_averted_const=1344944 rate_trig=0.01767 rate_const=0.00411 episodes=868.0  (24.1s)
+    driver=iota_hat T=0.2777 S=0.10 effort=0.0392 active_frac=0.3916 symp_trig=11834397 cases_averted=1094772 cases_averted_const=1105278 rate_trig=0.00854 rate_const=0.00338 episodes=903.7  (24.1s)
+    driver=iota_hat T=0.30074 S=0.50 effort=0.0370 active_frac=0.0740 symp_trig=11822346 cases_averted=1106823 cases_averted_const=1041270 rate_trig=0.04573 rate_const=0.00318 episodes=373.7  (24.1s)
+    driver=iota_hat T=0.30074 S=0.20 effort=0.0263 active_frac=0.1317 symp_trig=12179661 cases_averted=749508 cases_averted_const=734790 rate_trig=0.01739 rate_const=0.00225 episodes=578.5  (24.3s)
+    driver=iota_hat T=0.30074 S=0.10 effort=0.0209 active_frac=0.2092 symp_trig=12351236 cases_averted=577934 cases_averted_const=580544 rate_trig=0.00844 rate_const=0.00177 episodes=699.6  (24.1s)
+    driver=iota_hat T=0.32196 S=0.50 effort=0.0177 active_frac=0.0354 symp_trig=12411774 cases_averted=517396 cases_averted_const=490226 rate_trig=0.04471 rate_const=0.00150 episodes=239.9  (23.9s)
+    driver=iota_hat T=0.32196 S=0.20 effort=0.0110 active_frac=0.0548 symp_trig=12621025 cases_averted=308144 cases_averted_const=300341 rate_trig=0.01720 rate_const=0.00092 episodes=332.4  (24.1s)
+    driver=iota_hat T=0.32196 S=0.10 effort=0.0075 active_frac=0.0753 symp_trig=12722769 cases_averted=206401 cases_averted_const=205761 rate_trig=0.00838 rate_const=0.00063 episodes=410.0  (23.8s)
+  rho=0.15 done in 235.6s
+
+=== sensitivity point: rho=0.3 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.28351 0.30293 0.32167]
+  phi thresholds (p[20, 55, 85]): [0.28767 0.30647 0.32506]
+    driver=iota_hat T=0.28351 S=0.50 effort=0.0485 active_frac=0.0971 symp_trig=11429021 cases_averted=1500538 cases_averted_const=1383767 rate_trig=0.04723 rate_const=0.00423 episodes=342.3  (23.4s)
+    driver=iota_hat T=0.28351 S=0.20 effort=0.0413 active_frac=0.2064 symp_trig=11736590 cases_averted=1192969 cases_averted_const=1168222 rate_trig=0.01766 rate_const=0.00357 episodes=583.0  (23.3s)
+    driver=iota_hat T=0.28351 S=0.10 effort=0.0351 active_frac=0.3513 symp_trig=11938974 cases_averted=990585 cases_averted_const=988214 rate_trig=0.00862 rate_const=0.00302 episodes=543.4  (23.5s)
+    driver=iota_hat T=0.30293 S=0.50 effort=0.0368 active_frac=0.0735 symp_trig=11826642 cases_averted=1102917 cases_averted_const=1035454 rate_trig=0.04584 rate_const=0.00316 episodes=255.2  (24.1s)
+    driver=iota_hat T=0.30293 S=0.20 effort=0.0231 active_frac=0.1153 symp_trig=12268994 cases_averted=660565 cases_averted_const=641966 rate_trig=0.01750 rate_const=0.00196 episodes=356.2  (23.9s)
+    driver=iota_hat T=0.30293 S=0.10 effort=0.0193 active_frac=0.1926 symp_trig=12394514 cases_averted=535045 cases_averted_const=534158 rate_trig=0.00849 rate_const=0.00163 episodes=456.7  (24.1s)
+    driver=iota_hat T=0.32167 S=0.50 effort=0.0173 active_frac=0.0346 symp_trig=12428792 cases_averted=500767 cases_averted_const=477721 rate_trig=0.04418 rate_const=0.00146 episodes=198.0  (24.7s)
+    driver=iota_hat T=0.32167 S=0.20 effort=0.0106 active_frac=0.0528 symp_trig=12637912 cases_averted=291647 cases_averted_const=289790 rate_trig=0.01688 rate_const=0.00089 episodes=254.4  (24.5s)
+    driver=iota_hat T=0.32167 S=0.10 effort=0.0070 active_frac=0.0704 symp_trig=12737631 cases_averted=191927 cases_averted_const=192567 rate_trig=0.00833 rate_const=0.00059 episodes=316.1  (24.2s)
+  rho=0.3 done in 232.9s
+
+=== sensitivity point: nu0=0.03 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.2811  0.30208 0.32141]
+  phi thresholds (p[20, 55, 85]): [0.28775 0.30649 0.32508]
+    driver=iota_hat T=0.2811 S=0.50 effort=0.0524 active_frac=0.1048 symp_trig=11321109 cases_averted=1607209 cases_averted_const=1496929 rate_trig=0.04688 rate_const=0.00457 episodes=442.3  (24.1s)
+    driver=iota_hat T=0.2811 S=0.20 effort=0.0435 active_frac=0.2174 symp_trig=11669275 cases_averted=1259043 cases_averted_const=1232722 rate_trig=0.01770 rate_const=0.00377 episodes=717.3  (24.5s)
+    driver=iota_hat T=0.2811 S=0.10 effort=0.0369 active_frac=0.3689 symp_trig=11893810 cases_averted=1034508 cases_averted_const=1037912 rate_trig=0.00857 rate_const=0.00317 episodes=731.1  (24.6s)
+    driver=iota_hat T=0.30208 S=0.50 effort=0.0358 active_frac=0.0717 symp_trig=11856052 cases_averted=1072266 cases_averted_const=1008173 rate_trig=0.04570 rate_const=0.00308 episodes=310.8  (24.7s)
+    driver=iota_hat T=0.30208 S=0.20 effort=0.0244 active_frac=0.1222 symp_trig=12230735 cases_averted=697583 cases_averted_const=679351 rate_trig=0.01744 rate_const=0.00208 episodes=471.2  (24.4s)
+    driver=iota_hat T=0.30208 S=0.10 effort=0.0200 active_frac=0.2000 symp_trig=12375540 cases_averted=552778 cases_averted_const=552989 rate_trig=0.00845 rate_const=0.00169 episodes=586.3  (24.8s)
+    driver=iota_hat T=0.32141 S=0.50 effort=0.0178 active_frac=0.0355 symp_trig=12412910 cases_averted=515409 cases_averted_const=491583 rate_trig=0.04432 rate_const=0.00150 episodes=220.6  (25.1s)
+    driver=iota_hat T=0.32141 S=0.20 effort=0.0109 active_frac=0.0543 symp_trig=12627086 cases_averted=301232 cases_averted_const=298363 rate_trig=0.01694 rate_const=0.00091 episodes=295.5  (24.5s)
+    driver=iota_hat T=0.32141 S=0.10 effort=0.0074 active_frac=0.0741 symp_trig=12726155 cases_averted=202163 cases_averted_const=203156 rate_trig=0.00834 rate_const=0.00062 episodes=363.6  (24.7s)
+  nu0=0.03 done in 238.9s
+
+=== sensitivity point: nu0=0.06 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.27772 0.30049 0.32153]
+  phi thresholds (p[20, 55, 85]): [0.28779 0.30653 0.3251 ]
+    driver=iota_hat T=0.27772 S=0.50 effort=0.0573 active_frac=0.1145 symp_trig=11175912 cases_averted=1753055 cases_averted_const=1646541 rate_trig=0.04678 rate_const=0.00503 episodes=534.5  (24.5s)
+    driver=iota_hat T=0.27772 S=0.20 effort=0.0472 active_frac=0.2360 symp_trig=11564789 cases_averted=1364178 cases_averted_const=1344055 rate_trig=0.01767 rate_const=0.00411 episodes=857.5  (24.7s)
+    driver=iota_hat T=0.27772 S=0.10 effort=0.0392 active_frac=0.3916 symp_trig=11835557 cases_averted=1093410 cases_averted_const=1106879 rate_trig=0.00853 rate_const=0.00338 episodes=901.5  (25.1s)
+    driver=iota_hat T=0.30049 S=0.50 effort=0.0370 active_frac=0.0740 symp_trig=11822505 cases_averted=1106462 cases_averted_const=1044123 rate_trig=0.04567 rate_const=0.00319 episodes=373.3  (24.9s)
+    driver=iota_hat T=0.30049 S=0.20 effort=0.0265 active_frac=0.1325 symp_trig=12172656 cases_averted=756311 cases_averted_const=738779 rate_trig=0.01744 rate_const=0.00226 episodes=576.1  (25.1s)
+    driver=iota_hat T=0.30049 S=0.10 effort=0.0211 active_frac=0.2110 symp_trig=12346475 cases_averted=582492 cases_averted_const=584773 rate_trig=0.00844 rate_const=0.00179 episodes=710.6  (25.0s)
+    driver=iota_hat T=0.32153 S=0.50 effort=0.0183 active_frac=0.0366 symp_trig=12393738 cases_averted=535229 cases_averted_const=506353 rate_trig=0.04471 rate_const=0.00155 episodes=242.9  (25.1s)
+    driver=iota_hat T=0.32153 S=0.20 effort=0.0112 active_frac=0.0561 symp_trig=12614188 cases_averted=314779 cases_averted_const=308664 rate_trig=0.01714 rate_const=0.00094 episodes=339.1  (24.8s)
+    driver=iota_hat T=0.32153 S=0.10 effort=0.0077 active_frac=0.0774 symp_trig=12716363 cases_averted=212604 cases_averted_const=212090 rate_trig=0.00840 rate_const=0.00065 episodes=416.2  (25.4s)
+  nu0=0.06 done in 241.6s
+
+=== sensitivity point: nu0=0.12 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.27344 0.29919 0.32231]
+  phi thresholds (p[20, 55, 85]): [0.28772 0.30651 0.32514]
+    driver=iota_hat T=0.27344 S=0.50 effort=0.0639 active_frac=0.1278 symp_trig=10970349 cases_averted=1957885 cases_averted_const=1849417 rate_trig=0.04681 rate_const=0.00565 episodes=657.5  (25.2s)
+    driver=iota_hat T=0.27344 S=0.20 effort=0.0523 active_frac=0.2614 symp_trig=11419475 cases_averted=1508759 cases_averted_const=1494749 rate_trig=0.01764 rate_const=0.00457 episodes=1013.6  (25.1s)
+    driver=iota_hat T=0.27344 S=0.10 effort=0.0420 active_frac=0.4203 symp_trig=11760364 cases_averted=1167869 cases_averted_const=1188778 rate_trig=0.00849 rate_const=0.00363 episodes=1090.7  (25.2s)
+    driver=iota_hat T=0.29919 S=0.50 effort=0.0398 active_frac=0.0796 symp_trig=11735729 cases_averted=1192504 cases_averted_const=1124591 rate_trig=0.04578 rate_const=0.00344 episodes=456.8  (25.2s)
+    driver=iota_hat T=0.29919 S=0.20 effort=0.0290 active_frac=0.1448 symp_trig=12104704 cases_averted=823529 cases_averted_const=809394 rate_trig=0.01738 rate_const=0.00247 episodes=708.1  (24.8s)
+    driver=iota_hat T=0.29919 S=0.10 effort=0.0223 active_frac=0.2228 symp_trig=12315251 cases_averted=612983 cases_averted_const=618697 rate_trig=0.00841 rate_const=0.00189 episodes=845.0  (25.2s)
+    driver=iota_hat T=0.32231 S=0.50 effort=0.0193 active_frac=0.0386 symp_trig=12358965 cases_averted=569268 cases_averted_const=534000 rate_trig=0.04507 rate_const=0.00163 episodes=282.9  (24.7s)
+    driver=iota_hat T=0.32231 S=0.20 effort=0.0122 active_frac=0.0612 symp_trig=12581233 cases_averted=347000 cases_averted_const=336258 rate_trig=0.01733 rate_const=0.00103 episodes=402.3  (24.8s)
+    driver=iota_hat T=0.32231 S=0.10 effort=0.0083 active_frac=0.0827 symp_trig=12699565 cases_averted=228668 cases_averted_const=226411 rate_trig=0.00845 rate_const=0.00069 episodes=481.9  (25.0s)
+  nu0=0.12 done in 243.1s
+
+=== sensitivity point: kappa=0.15 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.28083 0.30321 0.32372]
+  phi thresholds (p[20, 55, 85]): [0.2877  0.30648 0.32505]
+    driver=iota_hat T=0.28083 S=0.50 effort=0.0559 active_frac=0.1119 symp_trig=11210883 cases_averted=1719215 cases_averted_const=1608998 rate_trig=0.04696 rate_const=0.00492 episodes=536.7  (28.7s)
+    driver=iota_hat T=0.28083 S=0.20 effort=0.0460 active_frac=0.2300 symp_trig=11595479 cases_averted=1334619 cases_averted_const=1309275 rate_trig=0.01773 rate_const=0.00400 episodes=865.1  (24.9s)
+    driver=iota_hat T=0.28083 S=0.10 effort=0.0382 active_frac=0.3820 symp_trig=11858610 cases_averted=1071488 cases_averted_const=1079660 rate_trig=0.00857 rate_const=0.00330 episodes=913.3  (25.0s)
+    driver=iota_hat T=0.30321 S=0.50 effort=0.0364 active_frac=0.0728 symp_trig=11835166 cases_averted=1094932 cases_averted_const=1026808 rate_trig=0.04593 rate_const=0.00314 episodes=377.7  (24.7s)
+    driver=iota_hat T=0.30321 S=0.20 effort=0.0258 active_frac=0.1290 symp_trig=12190551 cases_averted=739547 cases_averted_const=719490 rate_trig=0.01752 rate_const=0.00220 episodes=582.4  (24.8s)
+    driver=iota_hat T=0.30321 S=0.10 effort=0.0205 active_frac=0.2045 symp_trig=12361199 cases_averted=568899 cases_averted_const=569423 rate_trig=0.00850 rate_const=0.00174 episodes=710.9  (25.2s)
+    driver=iota_hat T=0.32372 S=0.50 effort=0.0177 active_frac=0.0354 symp_trig=12405450 cases_averted=524648 cases_averted_const=490745 rate_trig=0.04529 rate_const=0.00150 episodes=246.8  (25.5s)
+    driver=iota_hat T=0.32372 S=0.20 effort=0.0110 active_frac=0.0548 symp_trig=12617954 cases_averted=312144 cases_averted_const=302925 rate_trig=0.01739 rate_const=0.00093 episodes=339.9  (25.1s)
+    driver=iota_hat T=0.32372 S=0.10 effort=0.0076 active_frac=0.0756 symp_trig=12720333 cases_averted=209765 cases_averted_const=208685 rate_trig=0.00848 rate_const=0.00064 episodes=416.8  (24.6s)
+  kappa=0.15 done in 248.0s
+
+=== sensitivity point: kappa=0.3 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.27825 0.30092 0.32173]
+  phi thresholds (p[20, 55, 85]): [0.28777 0.30653 0.325  ]
+    driver=iota_hat T=0.27825 S=0.50 effort=0.0567 active_frac=0.1134 symp_trig=11194815 cases_averted=1732732 cases_averted_const=1629002 rate_trig=0.04669 rate_const=0.00498 episodes=533.0  (25.7s)
+    driver=iota_hat T=0.27825 S=0.20 effort=0.0465 active_frac=0.2327 symp_trig=11583473 cases_averted=1344075 cases_averted_const=1322604 rate_trig=0.01765 rate_const=0.00404 episodes=859.4  (25.3s)
+    driver=iota_hat T=0.27825 S=0.10 effort=0.0387 active_frac=0.3868 symp_trig=11850280 cases_averted=1077268 cases_averted_const=1090304 rate_trig=0.00851 rate_const=0.00333 episodes=899.6  (25.3s)
+    driver=iota_hat T=0.30092 S=0.50 effort=0.0368 active_frac=0.0735 symp_trig=11831225 cases_averted=1096323 cases_averted_const=1034325 rate_trig=0.04555 rate_const=0.00316 episodes=373.0  (25.6s)
+    driver=iota_hat T=0.30092 S=0.20 effort=0.0261 active_frac=0.1306 symp_trig=12185733 cases_averted=741815 cases_averted_const=726779 rate_trig=0.01735 rate_const=0.00222 episodes=573.8  (25.3s)
+    driver=iota_hat T=0.30092 S=0.10 effort=0.0207 active_frac=0.2073 symp_trig=12356876 cases_averted=570671 cases_averted_const=572778 rate_trig=0.00841 rate_const=0.00175 episodes=700.9  (24.6s)
+    driver=iota_hat T=0.32173 S=0.50 effort=0.0182 active_frac=0.0364 symp_trig=12397431 cases_averted=530117 cases_averted_const=503149 rate_trig=0.04445 rate_const=0.00154 episodes=244.0  (24.9s)
+    driver=iota_hat T=0.32173 S=0.20 effort=0.0111 active_frac=0.0556 symp_trig=12616172 cases_averted=311375 cases_averted_const=303698 rate_trig=0.01710 rate_const=0.00093 episodes=333.9  (24.5s)
+    driver=iota_hat T=0.32173 S=0.10 effort=0.0076 active_frac=0.0762 symp_trig=12719777 cases_averted=207770 cases_averted_const=206709 rate_trig=0.00833 rate_const=0.00063 episodes=409.5  (25.0s)
+  kappa=0.3 done in 244.1s
+
+=== sensitivity point: kappa=0.6 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.27274 0.29567 0.31647]
+  phi thresholds (p[20, 55, 85]): [0.28776 0.30648 0.32514]
+    driver=iota_hat T=0.27274 S=0.50 effort=0.0583 active_frac=0.1166 symp_trig=11159393 cases_averted=1769614 cases_averted_const=1677840 rate_trig=0.04638 rate_const=0.00513 episodes=544.3  (25.3s)
+    driver=iota_hat T=0.27274 S=0.20 effort=0.0481 active_frac=0.2405 symp_trig=11548973 cases_averted=1380034 cases_averted_const=1370105 rate_trig=0.01754 rate_const=0.00419 episodes=866.0  (25.3s)
+    driver=iota_hat T=0.27274 S=0.10 effort=0.0398 active_frac=0.3983 symp_trig=11823067 cases_averted=1105940 cases_averted_const=1125209 rate_trig=0.00849 rate_const=0.00344 episodes=903.5  (25.5s)
+    driver=iota_hat T=0.29567 S=0.50 effort=0.0376 active_frac=0.0753 symp_trig=11814243 cases_averted=1114763 cases_averted_const=1061458 rate_trig=0.04526 rate_const=0.00324 episodes=373.4  (25.4s)
+    driver=iota_hat T=0.29567 S=0.20 effort=0.0269 active_frac=0.1345 symp_trig=12169787 cases_averted=759220 cases_averted_const=750265 rate_trig=0.01724 rate_const=0.00229 episodes=582.6  (25.3s)
+    driver=iota_hat T=0.29567 S=0.10 effort=0.0213 active_frac=0.2134 symp_trig=12344092 cases_averted=584915 cases_averted_const=591852 rate_trig=0.00837 rate_const=0.00181 episodes=704.1  (25.2s)
+    driver=iota_hat T=0.31647 S=0.50 effort=0.0189 active_frac=0.0378 symp_trig=12385236 cases_averted=543771 cases_averted_const=523837 rate_trig=0.04396 rate_const=0.00160 episodes=243.3  (25.0s)
+    driver=iota_hat T=0.31647 S=0.20 effort=0.0117 active_frac=0.0583 symp_trig=12607185 cases_averted=321822 cases_averted_const=320260 rate_trig=0.01686 rate_const=0.00098 episodes=334.5  (24.9s)
+    driver=iota_hat T=0.31647 S=0.10 effort=0.0080 active_frac=0.0804 symp_trig=12711117 cases_averted=217890 cases_averted_const=220679 rate_trig=0.00828 rate_const=0.00067 episodes=416.0  (24.9s)
+  kappa=0.6 done in 244.5s
+
+=== sensitivity point: seasonal_delta=0.044 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.28416 0.30163 0.31596]
+  phi thresholds (p[20, 55, 85]): [0.29745 0.30732 0.31657]
+    driver=iota_hat T=0.28416 S=0.50 effort=0.0487 active_frac=0.0974 symp_trig=11512977 cases_averted=1448608 cases_averted_const=1389103 rate_trig=0.04544 rate_const=0.00424 episodes=582.3  (25.4s)
+    driver=iota_hat T=0.28416 S=0.20 effort=0.0387 active_frac=0.1933 symp_trig=11866519 cases_averted=1095067 cases_averted_const=1092291 rate_trig=0.01731 rate_const=0.00334 episodes=954.0  (24.9s)
+    driver=iota_hat T=0.28416 S=0.10 effort=0.0323 active_frac=0.3230 symp_trig=12071301 cases_averted=890284 cases_averted_const=906619 rate_trig=0.00842 rate_const=0.00277 episodes=1193.8  (25.4s)
+    driver=iota_hat T=0.30163 S=0.50 effort=0.0297 active_frac=0.0594 symp_trig=12085870 cases_averted=875715 cases_averted_const=832426 rate_trig=0.04501 rate_const=0.00254 episodes=405.2  (26.0s)
+    driver=iota_hat T=0.30163 S=0.20 effort=0.0214 active_frac=0.1070 symp_trig=12358657 cases_averted=602928 cases_averted_const=593944 rate_trig=0.01723 rate_const=0.00181 episodes=644.0  (26.0s)
+    driver=iota_hat T=0.30163 S=0.10 effort=0.0166 active_frac=0.1662 symp_trig=12503611 cases_averted=457974 cases_averted_const=459641 rate_trig=0.00842 rate_const=0.00140 episodes=830.5  (59.5s)
+    driver=iota_hat T=0.31596 S=0.50 effort=0.0153 active_frac=0.0307 symp_trig=12510029 cases_averted=451556 cases_averted_const=423898 rate_trig=0.04497 rate_const=0.00130 episodes=255.3  (41.3s)
+    driver=iota_hat T=0.31596 S=0.20 effort=0.0097 active_frac=0.0483 symp_trig=12687017 cases_averted=274569 cases_averted_const=265586 rate_trig=0.01737 rate_const=0.00081 episodes=375.3  (36.5s)
+    driver=iota_hat T=0.31596 S=0.10 effort=0.0067 active_frac=0.0672 symp_trig=12773869 cases_averted=187717 cases_averted_const=184570 rate_trig=0.00854 rate_const=0.00056 episodes=464.1  (36.2s)
+  seasonal_delta=0.044 done in 319.1s
+
+=== sensitivity point: seasonal_delta=0.088 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.27811 0.30113 0.32168]
+  phi thresholds (p[20, 55, 85]): [0.28778 0.30648 0.32511]
+    driver=iota_hat T=0.27811 S=0.50 effort=0.0569 active_frac=0.1138 symp_trig=11188150 cases_averted=1740679 cases_averted_const=1635034 rate_trig=0.04673 rate_const=0.00500 episodes=534.5  (36.3s)
+    driver=iota_hat T=0.27811 S=0.20 effort=0.0467 active_frac=0.2336 symp_trig=11577176 cases_averted=1351653 cases_averted_const=1328264 rate_trig=0.01768 rate_const=0.00406 episodes=859.8  (34.8s)
+    driver=iota_hat T=0.27811 S=0.10 effort=0.0389 active_frac=0.3888 symp_trig=11844853 cases_averted=1083976 cases_averted_const=1097481 rate_trig=0.00852 rate_const=0.00335 episodes=905.7  (36.8s)
+    driver=iota_hat T=0.30113 S=0.50 effort=0.0364 active_frac=0.0728 symp_trig=11841184 cases_averted=1087645 cases_averted_const=1024428 rate_trig=0.04565 rate_const=0.00313 episodes=377.3  (36.3s)
+    driver=iota_hat T=0.30113 S=0.20 effort=0.0260 active_frac=0.1299 symp_trig=12189743 cases_averted=739086 cases_averted_const=723498 rate_trig=0.01739 rate_const=0.00221 episodes=580.5  (36.4s)
+    driver=iota_hat T=0.30113 S=0.10 effort=0.0205 active_frac=0.2055 symp_trig=12361417 cases_averted=567412 cases_averted_const=568671 rate_trig=0.00844 rate_const=0.00174 episodes=700.5  (36.4s)
+    driver=iota_hat T=0.32168 S=0.50 effort=0.0178 active_frac=0.0356 symp_trig=12408715 cases_averted=520114 cases_averted_const=491567 rate_trig=0.04464 rate_const=0.00150 episodes=246.3  (36.5s)
+    driver=iota_hat T=0.32168 S=0.20 effort=0.0110 active_frac=0.0551 symp_trig=12620049 cases_averted=308780 cases_averted_const=303059 rate_trig=0.01711 rate_const=0.00093 episodes=336.1  (35.0s)
+    driver=iota_hat T=0.32168 S=0.10 effort=0.0076 active_frac=0.0760 symp_trig=12720680 cases_averted=208149 cases_averted_const=207009 rate_trig=0.00837 rate_const=0.00063 episodes=415.6  (36.9s)
+  seasonal_delta=0.088 done in 351.7s
+
+=== sensitivity point: seasonal_delta=0.176 (eps=0.3) ===
+  iota_hat thresholds (p[20, 55, 85]): [0.26213 0.2993  0.33538]
+  phi thresholds (p[20, 55, 85]): [0.26804 0.30504 0.3417 ]
+    driver=iota_hat T=0.26213 S=0.50 effort=0.0764 active_frac=0.1527 symp_trig=10349068 cases_averted=2471195 cases_averted_const=2233574 rate_trig=0.04944 rate_const=0.00683 episodes=477.2  (37.6s)
+    driver=iota_hat T=0.26213 S=0.20 effort=0.0659 active_frac=0.3294 symp_trig=10838916 cases_averted=1981347 cases_averted_const=1906353 rate_trig=0.01838 rate_const=0.00583 episodes=553.8  (36.8s)
+    driver=iota_hat T=0.26213 S=0.10 effort=0.0497 active_frac=0.4972 symp_trig=11420456 cases_averted=1399808 cases_averted_const=1415798 rate_trig=0.00860 rate_const=0.00433 episodes=433.4  (36.6s)
+    driver=iota_hat T=0.2993 S=0.50 effort=0.0489 active_frac=0.0977 symp_trig=11280741 cases_averted=1539522 cases_averted_const=1390257 rate_trig=0.04814 rate_const=0.00425 episodes=296.5  (35.8s)
+    driver=iota_hat T=0.2993 S=0.20 effort=0.0365 active_frac=0.1823 symp_trig=11752789 cases_averted=1067475 cases_averted_const=1023860 rate_trig=0.01790 rate_const=0.00313 episodes=438.5  (37.3s)
+    driver=iota_hat T=0.2993 S=0.10 effort=0.0284 active_frac=0.2840 symp_trig=12031068 cases_averted=789195 cases_averted_const=791929 rate_trig=0.00849 rate_const=0.00242 episodes=438.6  (37.0s)
+    driver=iota_hat T=0.33538 S=0.50 effort=0.0232 active_frac=0.0463 symp_trig=12143325 cases_averted=676938 cases_averted_const=643191 rate_trig=0.04466 rate_const=0.00197 episodes=232.5  (37.0s)
+    driver=iota_hat T=0.33538 S=0.20 effort=0.0139 active_frac=0.0693 symp_trig=12434719 cases_averted=385544 cases_averted_const=381124 rate_trig=0.01701 rate_const=0.00116 episodes=300.2  (37.0s)
+    driver=iota_hat T=0.33538 S=0.10 effort=0.0092 active_frac=0.0924 symp_trig=12570902 cases_averted=249361 cases_averted_const=252592 rate_trig=0.00824 rate_const=0.00077 episodes=350.1  (37.5s)
+  seasonal_delta=0.176 done in 359.5s
+
+Wrote sensitivity_grids.pkl (3956.5s total)
