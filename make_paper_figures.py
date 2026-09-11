@@ -260,3 +260,49 @@ print("Gap, trigger $-$ constant (pp) & " +
 print("95\\% CI & " +
       " & ".join(f"[{lo:+.2f}, {hi:+.2f}]" for lo, hi in zip(diff_pp_lo[s20], diff_pp_hi[s20]))
       + r" \\")
+
+# ---- (6) iso-effectiveness curve: for a target % case reduction, the minimum
+#          active fraction anywhere on the (S, threshold) grid that achieves at
+#          least that reduction ($\hat\iota_i$-driven). Answers research
+#          question 2 directly, without interpolation -- just the best of the
+#          35 grid cells actually run, so every point is an achieved result. ----
+symp_pct = d["Z_symp_pct"]      # (n_s, n_t), same grid as af_i etc.
+active_frac = d["Z_active_frac"]
+targets = np.array([5, 10, 15, 20, 25, 30, 35])
+iso_active_frac = np.full(targets.shape, np.nan)
+iso_S = np.full(targets.shape, np.nan)
+iso_Tidx = np.full(targets.shape, -1, dtype=int)
+for k, target in enumerate(targets):
+    mask = symp_pct >= target
+    if not mask.any():
+        continue
+    af_masked = np.where(mask, active_frac, np.inf)
+    i, j = np.unravel_index(np.argmin(af_masked), af_masked.shape)
+    iso_active_frac[k] = active_frac[i, j]
+    iso_S[k] = Slev[i]
+    iso_Tidx[k] = j
+
+fig, ax = plt.subplots(figsize=(6.0, 4.2))
+valid = np.isfinite(iso_active_frac)
+ax.plot(targets[valid], 100.0 * iso_active_frac[valid], "o-", color=INK, markersize=5)
+for k in np.where(valid)[0]:
+    ax.annotate(f"$S$={iso_S[k]:.2f}\np{pctl[iso_Tidx[k]]}",
+                 (targets[k], 100.0 * iso_active_frac[k]), textcoords="offset points",
+                 xytext=(6, 6), fontsize=7, color=INK_SECONDARY)
+ax.set_xlabel("target reduction in symptomatic cases (%)")
+ax.set_ylabel("minimum active fraction achieving it (%)")
+ax.set_title(r"Cheapest way to reach a case-reduction target ($\hat\iota_i$-driven)",
+             color=INK, loc="left")
+ax.set_yscale("log")
+ax.grid(True, which="both", axis="y", color="#e1e0d9", linewidth=0.5)
+fig.tight_layout()
+fig.savefig(outdir / "fig_trigger_iso_effectiveness_iota_hat_10yr_fine.png", dpi=200)
+plt.close(fig)
+print("\nwrote fig_trigger_iso_effectiveness_iota_hat_10yr_fine.png")
+for k in range(len(targets)):
+    if valid[k]:
+        print(f"  >= {targets[k]}% reduction: min active fraction "
+              f"{100*iso_active_frac[k]:.2f}% at S={iso_S[k]:.2f}, "
+              f"threshold={pctl[iso_Tidx[k]]}th percentile")
+    else:
+        print(f"  >= {targets[k]}% reduction: not achieved anywhere on this grid")
