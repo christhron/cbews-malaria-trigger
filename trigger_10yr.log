@@ -1,0 +1,45 @@
+Network: Ekiti road adjacency, 16 towns, eps=0.3, rho=0.15, 10yr horizon (coarse scan)
+  n_steps=10950, dt=0.01667, burn_in_steps=521
+Deriving data-driven threshold grid from a diagnostic off run ...
+  iota_hat thresholds (p[10, 35, 65, 90]): [0.26718 0.28825 0.30714 0.32564]
+  phi thresholds (p[10, 35, 65, 90]): [0.28454 0.29361 0.31383 0.32686]
+
+Sweeping trigger grid, driver=iota_hat ...
+    driver=iota_hat T=0.26718 S=0.50 effort=0.0688 active_frac=0.1376 symp_trig=10811351 cases_averted=2117776 cases_averted_const=2000281 rate_trig=0.04704 rate_const=0.00611  (28.9s)
+    driver=iota_hat T=0.26718 S=0.35 effort=0.0644 active_frac=0.1839 symp_trig=10999686 cases_averted=1929441 cases_averted_const=1863221 rate_trig=0.03206 rate_const=0.00569  (32.2s)
+    driver=iota_hat T=0.26718 S=0.20 effort=0.0578 active_frac=0.2890 symp_trig=11244653 cases_averted=1684474 cases_averted_const=1663339 rate_trig=0.01781 rate_const=0.00508  (27.7s)
+    driver=iota_hat T=0.26718 S=0.10 effort=0.0482 active_frac=0.4823 symp_trig=11576161 cases_averted=1352966 cases_averted_const=1374158 rate_trig=0.00857 rate_const=0.00420  (28.0s)
+    driver=iota_hat T=0.28825 S=0.50 effort=0.0472 active_frac=0.0944 symp_trig=11496434 cases_averted=1432693 cases_averted_const=1343492 rate_trig=0.04639 rate_const=0.00411  (30.7s)
+    driver=iota_hat T=0.28825 S=0.35 effort=0.0425 active_frac=0.1215 symp_trig=11669045 cases_averted=1260082 cases_averted_const=1205725 rate_trig=0.03169 rate_const=0.00368  (29.3s)
+    driver=iota_hat T=0.28825 S=0.20 effort=0.0370 active_frac=0.1852 symp_trig=11864905 cases_averted=1064222 cases_averted_const=1043831 rate_trig=0.01756 rate_const=0.00319  (30.8s)
+    driver=iota_hat T=0.28825 S=0.10 effort=0.0304 active_frac=0.3043 symp_trig=12082245 cases_averted=846882 cases_averted_const=852521 rate_trig=0.00850 rate_const=0.00261  (41.3s)
+    driver=iota_hat T=0.30714 S=0.50 effort=0.0316 active_frac=0.0632 symp_trig=11992559 cases_averted=936568 cases_averted_const=886300 rate_trig=0.04527 rate_const=0.00271  (28.0s)
+    driver=iota_hat T=0.30714 S=0.35 effort=0.0268 active_frac=0.0766 symp_trig=12151391 cases_averted=777736 cases_averted_const=749093 rate_trig=0.03101 rate_const=0.00229  (28.6s)
+    driver=iota_hat T=0.30714 S=0.20 effort=0.0215 active_frac=0.1076 symp_trig=12319552 cases_averted=609575 cases_averted_const=597715 rate_trig=0.01732 rate_const=0.00183  (27.7s)
+    driver=iota_hat T=0.30714 S=0.10 effort=0.0165 active_frac=0.1648 symp_trig=12475309 cases_averted=453818 cases_averted_const=455471 rate_trig=0.00842 rate_const=0.00139  (30.1s)
+    driver=iota_hat T=0.32564 S=0.50 effort=0.0143 active_frac=0.0286 symp_trig=12509286 cases_averted=419841 cases_averted_const=394809 rate_trig=0.04485 rate_const=0.00121  (30.7s)
+    driver=iota_hat T=0.32564 S=0.35 effort=0.0117 active_frac=0.0333 symp_trig=12592919 cases_averted=336208 cases_averted_const=321192 rate_trig=0.03083 rate_const=0.00098  (27.9s)
+    driver=iota_hat T=0.32564 S=0.20 effort=0.0085 active_frac=0.0425 symp_trig=12689539 cases_averted=239588 cases_averted_const=233677 rate_trig=0.01721 rate_const=0.00071  (29.4s)
+    driver=iota_hat T=0.32564 S=0.10 effort=0.0056 active_frac=0.0564 symp_trig=12772856 cases_averted=156271 cases_averted_const=154249 rate_trig=0.00847 rate_const=0.00047  (49.5s)
+  driver=iota_hat total: 517.9s
+
+Sweeping trigger grid, driver=phi ...
+    driver=phi T=0.28454 S=0.50 effort=0.0533 active_frac=0.1065 symp_trig=11306990 cases_averted=1622137 cases_averted_const=1525098 rate_trig=0.04652 rate_const=0.00466  (29.8s)
+    driver=phi T=0.28454 S=0.35 effort=0.0434 active_frac=0.1239 symp_trig=11621788 cases_averted=1307339 cases_averted_const=1229999 rate_trig=0.03223 rate_const=0.00376  (28.4s)
+    driver=phi T=0.28454 S=0.20 effort=0.0396 active_frac=0.1982 symp_trig=11772122 cases_averted=1157005 cases_averted_const=1120174 rate_trig=0.01784 rate_const=0.00342  (29.2s)
+    driver=phi T=0.28454 S=0.10 effort=0.0350 active_frac=0.3503 symp_trig=11920225 cases_averted=1008902 cases_averted_const=985319 rate_trig=0.00880 rate_const=0.00301  (28.1s)
+    driver=phi T=0.29361 S=0.50 effort=0.0377 active_frac=0.0753 symp_trig=11790537 cases_averted=1138590 cases_averted_const=1062198 rate_trig=0.04618 rate_const=0.00325  (28.3s)
+    driver=phi T=0.29361 S=0.35 effort=0.0393 active_frac=0.1123 symp_trig=11769394 cases_averted=1159733 cases_averted_const=1110413 rate_trig=0.03155 rate_const=0.00339  (28.1s)
+    driver=phi T=0.29361 S=0.20 effort=0.0299 active_frac=0.1495 symp_trig=12057615 cases_averted=871512 cases_averted_const=837253 rate_trig=0.01782 rate_const=0.00256  (28.0s)
+    driver=phi T=0.29361 S=0.10 effort=0.0266 active_frac=0.2665 symp_trig=12165783 cases_averted=763344 cases_averted_const=743504 rate_trig=0.00875 rate_const=0.00227  (28.4s)
+    driver=phi T=0.31383 S=0.50 effort=0.0252 active_frac=0.0505 symp_trig=12174188 cases_averted=754939 cases_averted_const=702801 rate_trig=0.04569 rate_const=0.00215  (28.4s)
+    driver=phi T=0.31383 S=0.35 effort=0.0191 active_frac=0.0545 symp_trig=12369900 cases_averted=559227 cases_averted_const=527780 rate_trig=0.03137 rate_const=0.00161  (28.0s)
+    driver=phi T=0.31383 S=0.20 effort=0.0128 active_frac=0.0641 symp_trig=12560991 cases_averted=368136 cases_averted_const=353424 rate_trig=0.01754 rate_const=0.00108  (28.1s)
+    driver=phi T=0.31383 S=0.10 effort=0.0104 active_frac=0.1044 symp_trig=12635446 cases_averted=293681 cases_averted_const=286827 rate_trig=0.00860 rate_const=0.00088  (29.5s)
+    driver=phi T=0.32686 S=0.50 effort=0.0086 active_frac=0.0172 symp_trig=12681223 cases_averted=247904 cases_averted_const=236013 rate_trig=0.04407 rate_const=0.00072  (28.0s)
+    driver=phi T=0.32686 S=0.35 effort=0.0074 active_frac=0.0211 symp_trig=12720248 cases_averted=208879 cases_averted_const=202127 rate_trig=0.03028 rate_const=0.00062  (28.9s)
+    driver=phi T=0.32686 S=0.20 effort=0.0055 active_frac=0.0277 symp_trig=12775702 cases_averted=153425 cases_averted_const=151627 rate_trig=0.01691 rate_const=0.00046  (27.4s)
+    driver=phi T=0.32686 S=0.10 effort=0.0037 active_frac=0.0371 symp_trig=12827439 cases_averted=101688 cases_averted_const=101852 rate_trig=0.00838 rate_const=0.00031  (27.6s)
+  driver=phi total: 472.9s
+
+Wrote figures to G:\My Drive\Colab Notebooks\all_hackathons\ML_epidemiology\ML_epidemiology_public\research\CB_EWS\code_trigger\figures
